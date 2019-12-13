@@ -16,5 +16,9 @@ public class HelloWordController {
     public String hello(){
         return "你好====";
     }
+    @GetMapping("/list")
+    public String list(){
+        return "欢迎来到申迪====";
+    }
 
 }
