@@ -5,6 +5,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 /**
  *
  * @author liufp
@@ -19,6 +21,10 @@ public class HelloWordController {
     @GetMapping("/list")
     public String list(){
         return "欢迎来到申迪====";
+    }
+    @GetMapping("/showTime")
+    public String showTime(){
+        return new Date().toString();
     }
 
 }
