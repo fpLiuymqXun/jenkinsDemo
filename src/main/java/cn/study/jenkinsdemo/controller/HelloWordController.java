@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWordController {
     @GetMapping("/test")
     public String hello(){
-        return "你好!!!";
+        return "你好====";
     }
 
 }
